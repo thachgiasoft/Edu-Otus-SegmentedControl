@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "17A50EDC-B488-4E52-BC5F-CA3897D64ECC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "729B7A34-D72C-4F8D-AA4F-4367C53ABD12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegmentedControl/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CB4AE3B-158A-4A5F-877F-132D24347751"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegmentedControl/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CB4AE3B-158A-4A5F-877F-132D24347751 - b9589c29fa910bc4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegmentedControl.ChartsViewModel.init() -&gt; SegmentedControl.ChartsViewModel"
+                  moduleName = "SegmentedControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/genakniznik/Documents/education/Swift/Otus_School/Lesson_6/Projects/SegmentedControlForHomeWork/SegmentedControl/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "995">
+               </Location>
+               <Location
+                  uuid = "4CB4AE3B-158A-4A5F-877F-132D24347751 - 4d7d5f1ecf469a11"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SegmentedControl.ArticleType) -&gt; () in SegmentedControl.ChartsViewModel.init() -&gt; SegmentedControl.ChartsViewModel"
+                  moduleName = "SegmentedControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/genakniznik/Documents/education/Swift/Otus_School/Lesson_6/Projects/SegmentedControlForHomeWork/SegmentedControl/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04DC841E-C194-4111-BC8B-9EC562370891"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegmentedControl/Views/PieSlice/PieSliceViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "createSlices(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "04DC841E-C194-4111-BC8B-9EC562370891 - 6088a55a61e7b847"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SegmentedControl.PieSliceViewModelFactory.createSlices(from: Swift.Array&lt;SegmentedControl.ArticlesData&gt;) -&gt; Swift.Array&lt;SegmentedControl.PieSliceViewModel&gt;"
+                  moduleName = "SegmentedControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/genakniznik/Documents/education/Swift/Otus_School/Lesson_6/Projects/SegmentedControlForHomeWork/SegmentedControl/Views/PieSlice/PieSliceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "04DC841E-C194-4111-BC8B-9EC562370891 - be266e5b298daf60"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SegmentedControl.ArticlesData) -&gt; Swift.String in static SegmentedControl.PieSliceViewModelFactory.createSlices(from: Swift.Array&lt;SegmentedControl.ArticlesData&gt;) -&gt; Swift.Array&lt;SegmentedControl.PieSliceViewModel&gt;"
+                  moduleName = "SegmentedControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/genakniznik/Documents/education/Swift/Otus_School/Lesson_6/Projects/SegmentedControlForHomeWork/SegmentedControl/Views/PieSlice/PieSliceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA54CD43-8C19-414F-A55F-9CEEF3CCD0C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegmentedControl/Views/PieSlice/PieSliceViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "createSlices(from:dataNames:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E311D009-23D4-4A3D-A58D-42D6261280CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegmentedControl/Views/PieChart/PieChartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
