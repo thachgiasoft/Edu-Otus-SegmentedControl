@@ -10,6 +10,7 @@ import Foundation
 
 struct PieSliceViewModel: Identifiable {
     
+    let colorParams: ColorParams
     let name: String
     var id = UUID()
     var startDeg: Double
@@ -36,7 +37,9 @@ struct PieSliceViewModelFactory {
             let startDeg = lastEndDeg
             let endDeg = lastEndDeg + (normalized * 360)
             lastEndDeg = endDeg
-            slices.append(PieSliceViewModel(name: dataNames[index],
+            let colorParams = ColorParamsFactory.create(for: index, maxCount: data.count)
+            slices.append(PieSliceViewModel(colorParams: colorParams,
+                                            name: dataNames[index],
                                             startDeg: startDeg,
                                             endDeg: endDeg,
                                             value: slice,

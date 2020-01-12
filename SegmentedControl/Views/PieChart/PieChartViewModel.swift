@@ -20,20 +20,20 @@ final class PieChartViewModel: ObservableObject {
     
     private func fetchArticlesDatas() {
         let dispatchGroup = DispatchGroup()
-        var articlesViewModels = [ArticlesData]()
+        var articlesDatas = [ArticlesData]()
         
         ArticleType.allCases.forEach { type in
             dispatchGroup.enter()
             ArticlesAPI.everythingGet(with: ArticlesParams(type: type)) { (type, list, error) in
                 if error == nil {
-                    articlesViewModels.append(ArticlesData(totalResults: list?.totalResults ?? 0, type: type))
+                    articlesDatas.append(ArticlesData(totalResults: list?.totalResults ?? 0, type: type))
                 }
                 dispatchGroup.leave()
             }
         }
         
         dispatchGroup.notify(queue: .main) {
-            self.slices = PieSliceViewModelFactory.createSlices(from: articlesViewModels)
+            self.slices = PieSliceViewModelFactory.createSlices(from: articlesDatas)
             self.isLoaded = true
         }
     }

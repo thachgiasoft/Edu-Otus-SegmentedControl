@@ -42,12 +42,6 @@ struct PieSliceView: View {
     
 }
 
-extension CGRect {
-    var mid: CGPoint {
-        return CGPoint(x:self.midX, y: self.midY)
-    }
-}
-
 struct PieSliceView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { geometry in

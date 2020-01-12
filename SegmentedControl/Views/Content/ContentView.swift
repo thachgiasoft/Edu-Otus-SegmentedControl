@@ -13,6 +13,7 @@ import NewsAPIClient
 final class ChartsViewModel: ObservableObject {
     
     @Published var pieChartViewModel = PieChartViewModel()
+    @Published var barChartViewModel = BarChartViewModel()
     
 }
 
@@ -80,14 +81,12 @@ struct ContentView: View {
             }.pickerStyle(SegmentedPickerStyle())
             
             if self.selection == 0 {
-//                PieChartView(data: [57567, 2169, 4320], backgroundColor: .white)
                 PieChartView(sliceBorderColor: .white)
                     .environmentObject(chartsViewModel.pieChartViewModel)
             } else if self.selection == 1 {
-                BarChartRow(data: [8,23,54,32,12,37,7], accentColor: Colors.OrangeStart, touchLocation: .constant(-1))
-//                Text("Bar").transition(.scale)
+                BarChartView().environmentObject(chartsViewModel.barChartViewModel)
             } else if self.selection == 2 {
-                Text("Line")
+//                LineView(data: [8,23,54,32,12,37,7,23,43], title: "Full chart", style: Styles.lineChartStyleOne)
             }
             
             Spacer()
@@ -97,6 +96,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ChartsViewModel())
     }
 }

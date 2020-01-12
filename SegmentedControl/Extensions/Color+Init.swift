@@ -16,4 +16,7 @@ extension Color {
         return Color(red: .random(in: randomBlueValue...1), green: .random(in: randomBlueValue2...1), blue: .random(in: randomBlueValue2...1))
     }
     
+    init(colorParams: ColorParams) {
+        self = .init(red: colorParams.red, green: colorParams.green, blue: colorParams.blue)
+    }
 }

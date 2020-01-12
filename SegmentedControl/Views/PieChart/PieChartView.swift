@@ -60,7 +60,7 @@ struct PieChartView: View {
     }
 
     public var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             if pieChartViewModel.isLoaded {
                 Spacer()
                 GeometryReader { geometry in
@@ -70,7 +70,7 @@ struct PieChartView: View {
                                          startDeg: self.pieChartViewModel.slices[i].startDeg,
                                          endDeg: self.pieChartViewModel.slices[i].endDeg,
                                          index: i, backgroundColor: self.sliceBorderColor,
-                                         accentColor: self.pieColors[i])
+                                         accentColor: Color(colorParams: self.pieChartViewModel.slices[i].colorParams))
                         }
                     }
                 }
@@ -78,13 +78,13 @@ struct PieChartView: View {
                     Spacer()
                     HStack {
                         Rectangle().frame(width: 20, height: 20)
-                            .foregroundColor(self.pieColors[i])
-                        Text("Test")
+                            .foregroundColor(Color(colorParams: self.pieChartViewModel.slices[i].colorParams))
+                        Text(self.pieChartViewModel.slices[i].name)
                     }
                 }
                 Spacer()
             }
-        }
+        }.padding([.top, .leading, .trailing], 10)
     }
 }
 
