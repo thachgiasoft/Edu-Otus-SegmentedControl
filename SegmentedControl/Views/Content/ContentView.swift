@@ -21,9 +21,7 @@ final class ChartsViewModel: ObservableObject {
 struct ContentView: View {
     
     @EnvironmentObject var chartsViewModel: ChartsViewModel
-    
-    @State private var selection = 0
-    
+    @State private var selection = 0    
     @State private var endpoints = ["Pie", "Bar", "Line"]
     
 
@@ -34,7 +32,13 @@ struct ContentView: View {
                     Text(self.endpoints[i]).tag(i)
                 }
             }.pickerStyle(SegmentedPickerStyle())
-            
+            Spacer()
+            Button(action: {
+                AppState.shared.toggleOverlay()
+            }) {
+              Text("Show Overlay")
+            }
+            Spacer()
             if self.selection == 0 {
                 PieChartView(sliceBorderColor: .white)
                     .environmentObject(chartsViewModel.pieChartViewModel)
@@ -43,7 +47,6 @@ struct ContentView: View {
             } else if self.selection == 2 {
                 LineChartView().environmentObject(chartsViewModel.lineChartViewModel)
             }
-            
             Spacer()
         }
         .padding(.horizontal, 20)    }

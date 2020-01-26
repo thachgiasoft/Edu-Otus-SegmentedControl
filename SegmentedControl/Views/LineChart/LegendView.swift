@@ -12,7 +12,7 @@ struct LegendView: View {
     
     @EnvironmentObject var histogramModelView: LineChartViewModel
     @Binding var frame: CGRect
-    let padding: CGFloat = 3
+    private let padding: CGFloat = 3
 
     var stepWidth: CGFloat {
         return histogramModelView.yAxis.count < 2 ? 0 : frame.size.width / CGFloat(histogramModelView.yAxis.count - 1)

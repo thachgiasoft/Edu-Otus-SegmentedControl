@@ -20,15 +20,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
+        let chartsViewModel = ChartsViewModel()
         let contentView = ContentView()
-            .environmentObject(ChartsViewModel())
+            .environmentObject(chartsViewModel)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
+            AppState.shared.mainWindow = window
             window.makeKeyAndVisible()
+            
+            AppState.shared.secondWindow = UIWindow(windowScene: windowScene)
+            //let vc = UIViewController()
+            //vc.view.backgroundColor = .red
+            let vc = UIHostingController(rootView: ContentViewOverlay()
+            .environmentObject(chartsViewModel))
+            AppState.shared.secondWindow?.rootViewController = vc
+            AppState.shared.secondWindow?.windowLevel = UIWindow.Level.alert + 1
+            AppState.shared.secondWindow?.rootViewController = vc
         }
     }
 
