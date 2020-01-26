@@ -14,54 +14,9 @@ final class ChartsViewModel: ObservableObject {
     
     @Published var pieChartViewModel = PieChartViewModel()
     @Published var barChartViewModel = BarChartViewModel()
+    @Published var lineChartViewModel = LineChartViewModel(histogram: Histogram())
     
 }
-
-//struct ButtonPressStyle: ButtonStyle {
-//
-//  func makeBody(configuration: Self.Configuration) -> some View {
-//    configuration.label
-//      .padding()
-//      .foregroundColor(.white)
-//      .background(configuration.isPressed ? Color.black : Color.gray)
-//      .cornerRadius(10.0)
-//      .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
-//  }
-//
-//}
-//
-//struct PieView: View {
-//
-//    @State private var showChart = false
-//
-//    var body: some View {
-//        VStack(spacing: 10) {
-//
-//            Button(action: {
-//                withAnimation {
-//                    self.showChart.toggle()
-//                }
-//            }) {
-//              Text("Custom Button")
-//            }
-//
-//            .buttonStyle(ButtonPressStyle())
-//
-//            if showChart {
-//                Text("Pie Chart")
-//                .transition(.move(edge: .bottom))
-//            }
-//        }
-//        .padding(.top, 10)
-//    }
-//
-//}
-
-//final class ChartsViewModel: ObservableObject {
-//
-//    @Published var news: ArticleList?
-//
-//}
 
 struct ContentView: View {
     
@@ -86,7 +41,7 @@ struct ContentView: View {
             } else if self.selection == 1 {
                 BarChartView().environmentObject(chartsViewModel.barChartViewModel)
             } else if self.selection == 2 {
-//                LineView(data: [8,23,54,32,12,37,7,23,43], title: "Full chart", style: Styles.lineChartStyleOne)
+                LineChartView().environmentObject(chartsViewModel.lineChartViewModel)
             }
             
             Spacer()

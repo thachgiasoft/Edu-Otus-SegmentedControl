@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61C4EC523DE04460079C6B9 /* CGPoint+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C4EC423DE04460079C6B9 /* CGPoint+Helper.swift */; };
+		E61C4EC723DE04650079C6B9 /* Path+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C4EC623DE04650079C6B9 /* Path+Helper.swift */; };
+		E61C4EC923DE08A50079C6B9 /* LineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C4EC823DE08A50079C6B9 /* LineChartViewModel.swift */; };
 		E62738A923CB539400D3A928 /* ColorParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738A823CB539400D3A928 /* ColorParams.swift */; };
 		E62738AB23CB72E400D3A928 /* SearchAPI+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738AA23CB72E400D3A928 /* SearchAPI+Requests.swift */; };
 		E62738AD23CB73E100D3A928 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738AC23CB73E100D3A928 /* RepositoryData.swift */; };
@@ -14,9 +17,8 @@
 		E62738B123CBA40D00D3A928 /* CGRect+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B023CBA40D00D3A928 /* CGRect+Helper.swift */; };
 		E62738B323CBAB8F00D3A928 /* BarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B223CBAB8F00D3A928 /* BarViewModel.swift */; };
 		E62738B623CBAC3B00D3A928 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B523CBAC3B00D3A928 /* LineChartView.swift */; };
-		E62738B823CBAD7D00D3A928 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B723CBAD7D00D3A928 /* Line.swift */; };
-		E62738BA23CBADA200D3A928 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B923CBADA200D3A928 /* Legend.swift */; };
-		E62738BC23CBAE1300D3A928 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738BB23CBAE1300D3A928 /* IndicatorPoint.swift */; };
+		E62738B823CBAD7D00D3A928 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B723CBAD7D00D3A928 /* LineView.swift */; };
+		E62738BA23CBADA200D3A928 /* LegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62738B923CBADA200D3A928 /* LegendView.swift */; };
 		E658694823B3C7E000F440F9 /* GitHubAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = E658694723B3C7E000F440F9 /* GitHubAPIClient */; };
 		E658695123B3D19200F440F9 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658695023B3D19200F440F9 /* PieChartView.swift */; };
 		E65A056623B3ED77008D0448 /* NewsAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = E65A056523B3ED77008D0448 /* NewsAPIClient */; };
@@ -42,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E61C4EC423DE04460079C6B9 /* CGPoint+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Helper.swift"; sourceTree = "<group>"; };
+		E61C4EC623DE04650079C6B9 /* Path+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Path+Helper.swift"; sourceTree = "<group>"; };
+		E61C4EC823DE08A50079C6B9 /* LineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewModel.swift; sourceTree = "<group>"; };
 		E62738A823CB539400D3A928 /* ColorParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorParams.swift; sourceTree = "<group>"; };
 		E62738AA23CB72E400D3A928 /* SearchAPI+Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchAPI+Requests.swift"; sourceTree = "<group>"; };
 		E62738AC23CB73E100D3A928 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
@@ -49,9 +54,8 @@
 		E62738B023CBA40D00D3A928 /* CGRect+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Helper.swift"; sourceTree = "<group>"; };
 		E62738B223CBAB8F00D3A928 /* BarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewModel.swift; sourceTree = "<group>"; };
 		E62738B523CBAC3B00D3A928 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
-		E62738B723CBAD7D00D3A928 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		E62738B923CBADA200D3A928 /* Legend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
-		E62738BB23CBAE1300D3A928 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		E62738B723CBAD7D00D3A928 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		E62738B923CBADA200D3A928 /* LegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendView.swift; sourceTree = "<group>"; };
 		E658695023B3D19200F440F9 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		E68AAF1A23C4CCB8004506A8 /* ArticlesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesData.swift; sourceTree = "<group>"; };
 		E68AAF1C23C4CCE4004506A8 /* ArticlesAPI+Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticlesAPI+Requests.swift"; sourceTree = "<group>"; };
@@ -93,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				E62738B523CBAC3B00D3A928 /* LineChartView.swift */,
-				E62738B723CBAD7D00D3A928 /* Line.swift */,
-				E62738B923CBADA200D3A928 /* Legend.swift */,
-				E62738BB23CBAE1300D3A928 /* IndicatorPoint.swift */,
+				E62738B723CBAD7D00D3A928 /* LineView.swift */,
+				E62738B923CBADA200D3A928 /* LegendView.swift */,
+				E61C4EC823DE08A50079C6B9 /* LineChartViewModel.swift */,
 			);
 			path = LineChart;
 			sourceTree = "<group>";
@@ -110,6 +114,8 @@
 				E68AAF2223C4CD44004506A8 /* Date+Helper.swift */,
 				E68AAF2423C4CD8D004506A8 /* Color+Init.swift */,
 				E62738B023CBA40D00D3A928 /* CGRect+Helper.swift */,
+				E61C4EC423DE04460079C6B9 /* CGPoint+Helper.swift */,
+				E61C4EC623DE04650079C6B9 /* Path+Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,11 +320,12 @@
 				E62738AD23CB73E100D3A928 /* RepositoryData.swift in Sources */,
 				FAFBC1E323ABC22A00D534A7 /* Histogram.swift in Sources */,
 				E62738AF23CB7B6200D3A928 /* BarChartViewModel.swift in Sources */,
-				E62738B823CBAD7D00D3A928 /* Line.swift in Sources */,
+				E62738B823CBAD7D00D3A928 /* LineView.swift in Sources */,
 				E658695123B3D19200F440F9 /* PieChartView.swift in Sources */,
 				E62738AB23CB72E400D3A928 /* SearchAPI+Requests.swift in Sources */,
 				E6EDEE6B23BD0B4C00F0F318 /* PieSliceView.swift in Sources */,
 				E6996B5A23C511F50020562D /* BarView.swift in Sources */,
+				E61C4EC923DE08A50079C6B9 /* LineChartViewModel.swift in Sources */,
 				E62738B323CBAB8F00D3A928 /* BarViewModel.swift in Sources */,
 				FA173AC123AB7F8500F6E73C /* AppDelegate.swift in Sources */,
 				E68AAF1D23C4CCE4004506A8 /* ArticlesAPI+Requests.swift in Sources */,
@@ -326,14 +333,15 @@
 				FA173AC323AB7F8500F6E73C /* SceneDelegate.swift in Sources */,
 				E68AAF1F23C4CD15004506A8 /* String+Helper.swift in Sources */,
 				E68AAF2823C4CDBF004506A8 /* ArticlesParams.swift in Sources */,
-				E62738BA23CBADA200D3A928 /* Legend.swift in Sources */,
+				E62738BA23CBADA200D3A928 /* LegendView.swift in Sources */,
 				FA173AC523AB7F8500F6E73C /* ContentView.swift in Sources */,
 				E68AAF2523C4CD8D004506A8 /* Color+Init.swift in Sources */,
+				E61C4EC723DE04650079C6B9 /* Path+Helper.swift in Sources */,
 				E68AAF2B23C4CE15004506A8 /* PieSliceViewModel.swift in Sources */,
-				E62738BC23CBAE1300D3A928 /* IndicatorPoint.swift in Sources */,
 				E62738A923CB539400D3A928 /* ColorParams.swift in Sources */,
 				E6996B5823C511BA0020562D /* BarChartView.swift in Sources */,
 				E68AAF2323C4CD44004506A8 /* Date+Helper.swift in Sources */,
+				E61C4EC523DE04460079C6B9 /* CGPoint+Helper.swift in Sources */,
 				E68AAF1B23C4CCB8004506A8 /* ArticlesData.swift in Sources */,
 				E6FA093D23C4D46300A2E66F /* PieChartViewModel.swift in Sources */,
 				E62738B123CBA40D00D3A928 /* CGRect+Helper.swift in Sources */,
