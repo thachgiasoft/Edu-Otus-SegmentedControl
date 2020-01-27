@@ -33,8 +33,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
             
             AppState.shared.secondWindow = UIWindow(windowScene: windowScene)
-            //let vc = UIViewController()
-            //vc.view.backgroundColor = .red
             let vc = UIHostingController(rootView: ContentViewOverlay()
             .environmentObject(chartsViewModel))
             AppState.shared.secondWindow?.rootViewController = vc
